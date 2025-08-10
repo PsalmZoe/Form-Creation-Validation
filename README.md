@@ -1,27 +1,37 @@
 # Form-Creation-Validation
 
-A simple HTML, CSS, and JavaScript project that implements **basic client-side form validations** for a user registration form.  
-Validations ensure users provide correct input formats before submission.
+A simple web project demonstrating **HTML form creation with validation** and **API data fetching** using JavaScript.
 
----
+## Features
 
-## 🚀 Features
+### 1. User Registration Form with Validation
+- Collects user details such as **name**, **email**, **password**, and **age**.
+- Implements **client-side validation** to ensure:
+  - Required fields are filled.
+  - Email format is valid.
+  - Password meets minimum length and complexity.
+  - Age is a valid number within the allowed range.
+- Displays **error messages** next to invalid fields.
+- Uses **CSS styling** for better UI/UX.
 
-- **Username validation**: Must be at least 3 characters long.
-- **Email validation**: Must contain `@` and `.`.
-- **Password validation**: Must be at least 8 characters long.
-- Real-time feedback after submission.
-- Minimal and responsive UI.
+### 2. Fetching and Displaying API Data
+- Fetches user data from:  
+  `https://jsonplaceholder.typicode.com/users`
+- Displays fetched user names in a **styled unordered list**.
+- Handles **loading state** (`"Loading user data..."` message).
+- Shows **error message** if API request fails.
+- Uses `fetch-data.js` with `async/await` for cleaner code.
 
----
+## File Structure
 
-## 📂 Project Structure
-
-Form-Creation-Validation/
+```plaintext
+form-creation-validation/
 │
-├── index.html # HTML form structure
-├── style.css # Form styling
-└── script.js # Validation logic
+├── index.html          # Main HTML file containing the form and API data container
+├── style.css           # Styles for the form and fetched data
+├── script.js           # Form validation logic
+├── fetch-data.js       # Fetch API logic for displaying user names
+└── README.md           # Project documentation
 
 ---
 
